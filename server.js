@@ -14,14 +14,14 @@ app.use(express.static("./"));
 
 var con = mysql.createConnection({
     host: "localhost",
-    user: "edu",
-    password: "edu123$",
+    user: "root",
+    password: "",
     database: "company_project"
 });
 
-/*con.connect(function(err) {
+con.connect(function(err) {
     if (err) throw err;
-});*/
+});
 
 //var con = require("./mySqlConnect")
 
