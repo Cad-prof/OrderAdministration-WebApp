@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send new order | OMS </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="../css/send_order.css">
+	<style>
+        body {
+            background-image: url('../body-background.jpg');
+            background-size: cover; /* Optional: Adjusts the image size to cover the entire background */
+            background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+        }
+    </style>
+</head>
+<body >
+
+	<nav class="navbar navbar-dark">
+		<span class="navbar-brand mb-0 h1"><i class="fab fa-asymmetrik"></i>&nbsp;&nbsp;Systeme de Gestion de Commande</span>
+		<span class="navbar-text">
+				<i class="fas fa-user"></i>&nbsp; <span class="client-name">Admin01</span> 
+		</span>
+	</nav>
+
+	<img src="../assets/header-bg.png" width="100%">
+
+	<div class="title">Enregistrer une Commande</div>
+
+	<div class="wraper">
+		<div class="container" id="items">
+			<div class="row header">
+				<div class="col-5">Nom du modéle</div>
+				<div class="col-2">Quantité</div>
+				<div class="col-5">Blueprint</div>
+			</div>
+			<div class="row item-data">
+				<div class="col-5"><input type="text" name="ModelName" class="modelName"></div>
+				<div class="col-2"><input type="text" name="Quantity" class="quantity"></div>
+				<div class="col-5"><input type="file" name="Blueprint" accept="image/*" class="blueprint"></div>
+				
+			</div>
+		</div>
+		
+		<div>
+			<button type="button" class="btn btn-success add-btn" onclick="addItem()">
+				&nbsp;<i class="fas fa-plus"></i>&nbsp;&nbsp;Add item&nbsp;
+			</button>
+		</div>
+
+		<div class="btn-wraper">
+			<button type="button" class="btn btn-primary send-btn" onclick="sendOrder()">SEND</button>
+		</div>
+
+	</div>
+
+	<script src="../js/send_order.js"></script>
+
+</body>
+</html>
